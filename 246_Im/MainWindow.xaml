@@ -1,0 +1,28 @@
+﻿<Window x:Class="_246_Im.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_246_Im"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel Height="60" Orientation="Horizontal" Background="Beige">
+            <Image Source="/Images/нн.jpg" Height="50" Margin="5"/>
+            <TextBlock Text="Картинки" FontSize="40"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Height="300">
+            <Image x:Name="myImg" Height="295" Width="300" Margin="5"/>
+
+            <StackPanel >
+                <Button Content="Открыть" Margin="5" Click="Open_Click"/>
+                <Button Content="Сохранить" Margin="5" Click="Save_Click"/>
+                <Button Content="Изменть..." Margin="5" Click="Edit_Click"/>
+            </StackPanel>
+        </StackPanel>
+
+
+
+    </StackPanel>
+</Window>
